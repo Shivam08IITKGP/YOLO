@@ -8,6 +8,7 @@ from tracker import ObjectTracker
 from utils import draw_counting_line, draw_detections, log_data, display_counts
 from reader import VideoReader
 
+
 def main():
     # Create directories if they do not exist
     os.makedirs(INGOING_DIR, exist_ok=True)
@@ -63,6 +64,7 @@ def main():
     reader.release()
     cv2.destroyAllWindows()
 
+
 def process_tracked_object(result, image, totalCountIn, totalCountOut):
     x1, y1, x2, y2, ID = result
     x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
@@ -86,6 +88,7 @@ def process_tracked_object(result, image, totalCountIn, totalCountOut):
             if totalCountOut.count(ID) == 0:
                 totalCountOut.append(ID)
                 cv2.imwrite(f'{OUTGOING_DIR}/{current_time}_{int(ID)}.jpg', crop_img)
+
 
 if __name__ == "__main__":
     main()

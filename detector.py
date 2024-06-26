@@ -3,6 +3,7 @@ import math
 import numpy as np
 from ultralytics import YOLO
 
+
 class YOLODetector:
     def __init__(self, weights_path, mask_path, class_names):
         self.model = YOLO(weights_path)

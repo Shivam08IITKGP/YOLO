@@ -1,6 +1,8 @@
 opencv-python-headless
-ultralytics
-cvzone
+ultralytics~=8.2.42
+cvzone~=1.6.1
 scipy
-numpy
-filterpy
+numpy~=1.26.4
+filterpy~=1.4.5
+opencv-python~=4.10.0.84
+matplotlib~=3.9.0

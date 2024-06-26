@@ -1,5 +1,6 @@
 from sort import Sort
 
+
 class ObjectTracker:
     def __init__(self):
         self.tracker = Sort(max_age=20, min_hits=3, iou_threshold=0.3)
