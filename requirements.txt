@@ -1,0 +1,6 @@
+opencv-python-headless
+ultralytics
+cvzone
+scipy
+numpy
+filterpy
