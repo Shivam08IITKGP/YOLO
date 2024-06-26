@@ -39,7 +39,7 @@ Place your mask image in the project root directory.
 Run the vehicle detection and tracking script:
 
 ```sh
-python main.py
+python3 main.py
 ```
 ## Usage
 The script processes a video file (Cars.mp4), detects and tracks vehicles, and saves the results as an annotated video (processed_video.mp4). The vehicle images are saved in the Detected Ingoing and Detected Outgoing directories based on their movement direction. A CSV file (Detection_log.csv) logs the counts and timestamps.
